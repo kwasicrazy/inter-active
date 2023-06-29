@@ -1,15 +1,15 @@
 import React from 'react'
 import logo from './img/coding.svg'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
     <div className='nav'>
     
-        <h1><img src={logo} alt='logo' height='50px' width='50px'/>smartDev</h1>
+        <h3 className='brandName'><img src={logo} alt='logo' height='30px' width='30px'/>smartDev</h3>
         <div className='about'>
-            <a href='#'>Careers</a>
-            <a href='#'>About us</a>
-            <a href='#'>Blog</a>
+            <Link to='/'>Home</Link>
+            <Link to="/demo"> Demo</Link>
         </div>
         <button className='contact'>CONTACT US</button>
         

@@ -3,8 +3,8 @@
   color: white;
   padding-left: 150px;
   padding-right: 150px;
-  height: 900px;
-
+  height: auto;
+  
 }
 h1{
   font-weight: lighter;
@@ -13,6 +13,10 @@ h1{
 .nav{
   display: flex;
   justify-content: space-between;
+}
+
+.brandName{
+  height: 60px;
 }
 .about{
   display: flex;
@@ -24,9 +28,10 @@ a{
   font-weight: bolder;
   font-size: 20px;
   color: white;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .contact{
+  margin-top: 0px;
   height: 50px;
   width: 150px;
   background-color: black;
@@ -36,8 +41,9 @@ a{
   border-block-color: white;
   
 }
-.hero{
+.home{
   display: flex;
+  justify-content: space-between;
   
 }
 h2{
@@ -64,6 +70,62 @@ h4{
   border-style: double ;
   border-block-color: white;
 }
-hr{
+
+
+.footer{
   margin-top: 100px;
+  width: auto;
+  background-color: aqua;
+
+}
+
+.foot-img{
+  display: flex;
+  justify-content: center;
+}
+
+.nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: chartreuse;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 60px;
+}
+
+.demo-page{
+ height: 500px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.text-container {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid #000; /* Add a blinking cursor effect */
+  animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 24px; /* Adjust the font size as desired */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
 }

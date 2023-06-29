@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import ImageGallery from './HeroImage'
+import ImageGallery from './HeroImage';
 
 
 
-const Hero = () => {
+
+const Home = () => {
   
   
   return (
-    <div className='hero'>
+    <div className='home'>
         <div className='text'>
             <h2>ACCELERATE APP DEVELOPMENT</h2>
             <h4>Quickly and easily generate diverse and realistic synthetic data and high-fidelity 3D worlds to enhance model performance.</h4>
@@ -22,4 +23,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Home

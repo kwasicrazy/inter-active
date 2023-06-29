@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import TextAnimation from './TextAnimation';
 
 const Demo = () => {
-  return (
-    <div>
-        this is Demo
-    </div>
-  )
-}
+  const texts = ['Demo is under development. . . .'];
 
-export default Demo
+  return (
+    <div className='demo-page'>
+      
+      <TextAnimation texts={texts} />
+    </div>
+  );
+};
+
+export default Demo;
+
